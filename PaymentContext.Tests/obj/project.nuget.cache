@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "eFhIIq3IIYbjOBmFlNbzTA8NeDmAYF6Sn2QV5XsVeeqNGw8qZEpMN280onGqsToKtGPp73LeGh+oWV+P8A7e1w==",
+  "dgSpecHash": "Tif+w8+Rqdv5rPvCaq3MWDzm+aOSK9I/cq2OkDgyJdX9DqgN95OMCg2Jpt9O0LbgRoRk0aF4KSGKTw+c0bZNuA==",
   "success": true,
   "projectFilePath": "D:\\estudos\\PaymentContext\\PaymentContext.Tests\\PaymentContext.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Fabricio\\.nuget\\packages\\coverlet.collector\\1.2.0\\coverlet.collector.1.2.0.nupkg.sha512",
+    "C:\\Users\\Fabricio\\.nuget\\packages\\flunt\\1.0.5\\flunt.1.0.5.nupkg.sha512",
     "C:\\Users\\Fabricio\\.nuget\\packages\\microsoft.codecoverage\\16.5.0\\microsoft.codecoverage.16.5.0.nupkg.sha512",
     "C:\\Users\\Fabricio\\.nuget\\packages\\microsoft.csharp\\4.0.1\\microsoft.csharp.4.0.1.nupkg.sha512",
     "C:\\Users\\Fabricio\\.nuget\\packages\\microsoft.net.test.sdk\\16.5.0\\microsoft.net.test.sdk.16.5.0.nupkg.sha512",

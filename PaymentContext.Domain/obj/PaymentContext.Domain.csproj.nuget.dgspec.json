@@ -47,6 +47,10 @@
               "target": "Package",
               "version": "[2.0.3, )",
               "autoReferenced": true
+            },
+            "flunt": {
+              "target": "Package",
+              "version": "[*, )"
             }
           },
           "imports": [
@@ -102,6 +106,10 @@
               "target": "Package",
               "version": "[2.0.3, )",
               "autoReferenced": true
+            },
+            "flunt": {
+              "target": "Package",
+              "version": "[1.0.5, )"
             }
           },
           "imports": [
