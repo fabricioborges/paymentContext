@@ -26,12 +26,8 @@ namespace PaymentContext.Domain.Entities
         public string Address { get; private set; }
         public IReadOnlyCollection<Subscription> Subscriptions { get { return _subscriptions.ToArray(); } }
 
-        public void AddSubsceiption(Subscription subscription)
-        {
-            //Se já tiver uma assinatura ativa, cancela
-
-            //Cancela todas as outras assinaturas e coloca essa como principal
-
+        public void AddSubscription(Subscription subscription)
+        {                      
             var hasSubscriptionActive = false;
 
             foreach (var sub in Subscriptions)
@@ -40,11 +36,13 @@ namespace PaymentContext.Domain.Entities
                     hasSubscriptionActive = true;
             }
 
-
             AddNotifications(new Contract()
                 .Requires()
                 .IsFalse(hasSubscriptionActive, "Student.Subscriptions", "Você já tem uma assinatura ativa")
+                .IsLowerOrEqualsThan(0, subscription.Payments.Count, "Student.Subscriptions.Payments", "Essa assinatura não possui pagamentos")
                 );
+
+            _subscriptions.Add(subscription);    
 
             // Alternativa
             // if(hasSubscriptionActive)
