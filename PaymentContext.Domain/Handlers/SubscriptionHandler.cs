@@ -56,6 +56,9 @@ namespace PaymentContext.Domain.Handlers
 
             AddNotifications(name, document, email, address, student, subscription, payment);
 
+            if(Invalid)
+                return new CommandResult(false, "Não foi possível realizar assinatura!");
+
             _repository.CreateSubscription(student);
 
             _emailService.Send(student.Name.ToString(), student.Email.Address, "bem-vindo sua assinatura foi criada", "sua assinatuea foi efetuada com sucesso");
